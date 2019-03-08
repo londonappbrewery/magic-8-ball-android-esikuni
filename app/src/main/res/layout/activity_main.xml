@@ -5,32 +5,20 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7CB342"
+    android:background="#5900897B"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/askButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="80dp"
-        android:background="#FDD835"
-        android:text="Ask"
-        android:textColor="#3949AB" />
-
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:text="Make everyday decision easier!"
+        android:layout_above="@id/image_eightBall"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -39,7 +27,23 @@
         android:id="@+id/image_eightBall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/askButton"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/eightball_imageLabel"
         app:srcCompat="@drawable/ball1" />
+
+    <Button
+        android:id="@+id/askButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_eightBall"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:text="@string/ask"
+        android:textColor="#555"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
